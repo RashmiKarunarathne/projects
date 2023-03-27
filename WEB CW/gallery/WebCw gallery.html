@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Gallery</title>
+	<style>
+	
+	body{
+	        margin:0;
+			background:gray;
+	}
+	
+	
+ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: rgb(124, 22, 90);
+
+  }
+
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(218, 145, 218);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 16;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  li a:hover {
+    border: 2px solid rgb(250, 134, 231);
+    border-radius: 15%;
+    background-color: rgb(177, 5, 125);
+  }
+
+  .img{
+    width: 80px;
+    height: 60px;
+  }
+
+	nav a{
+	        width:120px;
+			display:block;
+			text-decoration:none;
+			text-align:center;
+			background:#594848;
+			font-size:17px;
+			color:white;
+			padding:20px 10px;
+			font-family:Arial;
+	}
+	
+	h1{
+			text-align: center;
+			font-size: 60px;
+			color:whitesmoke;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			text-shadow:5px 5px black, 0 0 25px blue, 0 0 5px darkblue;
+	}
+	h2{
+			margin-left: 6px;
+			font-size: 25px;
+			font-family: Georgia, 'Times New Roman', Times, serif; 
+	}
+	.box{
+	        display:grid;
+			grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+			gap:2.5rem;
+	        max-width:1200px;
+			margin:auto;
+			background:#f2f2f2;
+			overflow:auto;
+	}
+	.gallery{
+	            margin:5px;
+				border:1px solid #ccc;
+				float:left;
+				width:250px;		
+	}
+	
+	.gallery img{
+	                width:100%;
+					height:100%;
+	}
+	img:hover {
+                opacity: 0.5;
+	}			
+	.desc{
+	        padding:10px;
+			text-align:center;
+	}
+	#overlay1, #overlay2, #overlay3, #overlay4, #overlay5{
+      position: fixed;
+	  text-align: center;
+      display: none;         
+	  left: 50px;
+	  top: 25px;
+	  padding: 15px;
+	  background-color: rgba(0,0,0,0.5);
+      z-index: 4;
+      cursor: pointer;
+	  border-style: solid; 
+	  border-width: thick;
+    }
+	h1 {
+    font: bold;
+    color:rgb(35, 35, 107);
+    font-family: calibri;
+    }
+
+	h2{
+		color:darkblue;
+	   
+
+	}
+
+	h3{
+		color: rgb(50, 50, 107);
+	}
+
+	p{
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		color: darkblue;
+		font-size: xx-large;
+		
+	}
+
+	hr{
+		border-top: 1px solid rgb(8, 145, 126);
+		max-width: 10000px;
+		
+	}
+
+	body{
+		background-color: rgb(140, 141, 143);
+	}
+
+	img{
+		width:10%;
+		height:1%;
+		border-radius: 2%;
+		border-color: black;
+		border: 2;
+	   }
+
+	div{
+		text-align:center;
+		font-family:sans-serif;
+	} 
+    
+	  
+	</style>
+    </head>
+    <body>
+		<div class="navigation">
+			<ul>                     
+							   
+				<li><img src="../images/image1.jpg" class="img"></li>
+				<li><a href="../html/home.html">Home</a></li> 
+				<li><a href="../site map/SiteMap.html">Destination</a></li> 
+				<li><a href="../gallery/WebCw gallery.html">Gallery</a></li>  
+				<li><a href="../quiz/quiz.html">Quiz</a></li> 
+				<li><a href="../buy products/buy products.html">Store</a></li>
+				<li><a href="../html/queryform.html">Query form</a></li>
+				<li><a href="../about us/student_details2.html">About Us</a></li>             
+			   
+			</ul>
+		</div>
+		<h1>GALLERY</h1>
+		<form>
+            <div class="cascading">
+            <b style="color: white;font-size: 17px;padding-left:20px">BACKGROUND COLOR:</b>
+            <select id="background" onchange="updateBackgroundColour(this)">
+                <option value="#778899">Light grey</option>
+                <option value="#3CB371">MediumSeaGreen</option>
+                <option value="#DAA520">yellow</option>
+                <option value="#F08080">LightCoral</option>
+            </select>
+            </div>
+        </form>
+		<br>
+		<script>
+            function updateBackgroundColour(selectElem) {
+            var i = selectElem.selectedIndex; // Get the selected option's index.
+                if (i < 0) {
+                            return; // Nothing is selected.
+            }
+            // Set the background-color CSS attribute of the <body> element to 
+            // the value attribute of the selected option in our <select> element.
+            document.body.style.backgroundColor = selectElem.options[i].value;}
+        </script>
+
+
+        <form>
+            <div class="cascading">
+                <b style="color: white;font-size: 17px;padding-left:20px">TEXT-COLOR:</b>
+                <select id="backGround"  onChange="updateTextColour(this.value)">
+                <option value="000000">Black</option>
+                <option value="00CED1">Teal</option>
+                <option value="DAA520">Yellow</option>
+                <option value="228B22">Green</option>
+                <option value="191970">Blue</option>
+                </select>
+            </div>
+        </form> 
+        <script>
+            function updateTextColour(value) {
+                                                document.body.style.color = '#' + value;
+            }
+        </script>
+		<br>
+		<div class="column" style="padding:20px">
+		    <div class="gallery">
+			    <a target="_self" href="Webcwimages/ella.jpg">
+			    <img src="ella.jpg">
+				</a>
+				<div class="desc">Ella</div>		
+				<div id="overlay1" onclick="el0()">
+                              <img src="ella.jpg" class="over_image" style="width:500px; height:450px; padding:15px;">
+							    <div class="box">
+								    <h2><b>Ella</b></h2>
+									<p>Ella is located near to 'Bandarawela' in SriLanka. There are nine arch bridge ,diyaluma falls, ella rock and mountain views etc.</p>
+									<p>Tourists can spend their days among these greenest surroundings, enjoying the view from hilltop houses and adventurous hiiking trails</p>
+								</div>  
+				</div>
+                <input type="radio" id="Ella" name="Ella" value="ViewMore1" onclick="el1()">
+                <label for="Ella" ><b> View More >>> </b></label>
+                				
+			</div>
+			<div class="gallery">
+			    <a target="_self" href="Webcwimages/sigiriya.jpg">
+			    <img src="sigiriya.jpg">
+				</a>
+				<div class="desc">Sigiriya</div>
+				<div id="overlay2" onclick="sg0()">
+                              <img src="sigiriya.jpg" class="over_image" style="width:500px; height:450px; padding:15px;">
+							    <div class="box">
+								    <h2><b>Sigiriya</b></h2>
+									<p>Sigiriya is located at 'Polanaruwa' in SriLanka. It built by King 'Kasyappa'. There are sigiriya paintings, ancient lakes, sigiriya rock and mountain views etc. Sigiriya is considered as a world heritage by UNESCO. </p>
+									<p>Tourists can spend their days among these greenest surroundings, enjoying the view from top of the rock.</p>
+								</div>  
+				</div>
+                <input type="radio" id="Sigiriya" name="Sigiriya" value="ViewMore2" onclick="sg1()">
+                <label for="Sigiriya" ><b> View More >>> </b></label>
+			</div>
+			<div class="gallery">
+			    <a target="_self" href="Webcwimages/Tajmahal.jpg">
+			    <img src="Tajmahal.jpg">
+				</a>
+				<div class="desc">Tajmahal</div>
+				<div id="overlay3" onclick="tm0()">
+				              <img src="Tajmahal.jpg" class="over_image" style="width:500px; height:450px; padding:15px;">
+							    <div class="box">
+								    <h2><b>Tajmahal</b></h2>
+									<p>An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.</p>
+									<p>The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect.</p>
+								</div>  
+				</div>
+                <input type="radio" id="Tajmahal" name="Tajmahal" value="ViewMore3" onclick="tm1()">
+                <label for="Tajmahal" ><b> View More >>> </b></label>
+			</div>
+			<div class="gallery">
+			    <a target="_self" href="Webcwimages/eiffel_tower.jpg">
+			    <img src="eiffel_tower.jpg">
+				</a>
+				<div class="desc">EiffelTower</div>
+				<div id="overlay4" onclick="gw0()">
+				              <img src="eiffel_tower.jpg" class="over_image" style="width:500px; height:450px; padding:15px;">
+							    <div class="box"> 
+								    <h2><b>Eiffel Tower</b></h2>
+									<p>Eiffel Tower, French Tour Eiffel, Parisian landmark that is also a technological masterpiece in building-construction history. When the French government was organizing the International Exposition of 1889 to celebrate the centenary of the French Revolution, a competition was held for designs for a suitable monument.</p>
+									<p>Many tourists can spend their time in this cool place with watching and taking pictures around this place.</p>
+								</div>  
+				</div>
+                <input type="radio" id="EiffelTower" name="EiffelTower" value="ViewMore4" onclick="gw1()">
+                <label for="EiffelTower" ><b> View More >>> </b></label>
+			</div>
+			<div class="gallery">
+			    <a target="_self" href="Webcwimages/Greatwall.jpg">
+			    <img src="Greatwall.jpg">
+				</a>
+				<div class="desc">Greatwall</div>
+				<div id="overlay5" onclick="et0()">
+				              <img src="Greatwall.jpg" class="over_image" style="width:500px; height:450px; padding:15px;">
+							    <div class="box"> 
+								    <h2><b>Greatwall</b></h2>
+									<p>The Great Wall of China is one of the greatest sights in the world — the longest wall in the world, an awe-inspiring feature of ancient defensive architecture. Its winding path over rugged country and steep mountains takes in some great scenery.</p>
+									<p> It may not be clearly visible from space, but it is considered “an absolute masterpiece” here on Earth.</p>
+								</div>  
+				</div>
+                <input type="radio" id="Greatwall" name="Greatwall" value="ViewMore5" onclick="et1()">
+                <label for="Greatwall" ><b> View More >>> </b></label>
+			</div>
+		</div>
+		<script>
+          function el1() {
+          document.getElementById("overlay1").style.display = "block";
+          }
+
+          function el0() {
+          document.getElementById("overlay1").style.display = "none";
+          }
+		  function sg1() {
+          document.getElementById("overlay2").style.display = "block";
+          }
+
+          function sg0() {
+          document.getElementById("overlay2").style.display = "none";
+          }
+		  function tm1() {
+          document.getElementById("overlay3").style.display = "block";
+          }
+
+          function tm0() {
+          document.getElementById("overlay3").style.display = "none";
+          }
+		  function gw1() {
+          document.getElementById("overlay4").style.display = "block";
+          }
+
+          function gw0() {
+          document.getElementById("overlay4").style.display = "none";
+          }
+		  function et1() {
+          document.getElementById("overlay5").style.display = "block";
+          }
+
+          function et0() {
+          document.getElementById("overlay5").style.display = "none";
+          }
+		</script>
+	<div >
+		<div class="editor">
+		<a href="editor_page.html">
+		<span></span>
+		Editors page
+		</a>
+		</div>
+	</div>
+		
+		
+    </body>
+</html>
+	

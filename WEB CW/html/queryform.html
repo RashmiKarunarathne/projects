@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Form</title>
+    <link rel="stylesheet" href="../css/queryform.css">
+    <script src="../javascript/queryform.js"></script>
+
+    
+</head>
+
+<body>
+
+    <body>
+        <div class="navigation">
+            <ul>                       
+                <li><img src="../images/image1.jpg" class="img"></li>
+                <li><a href="home.html">Home</a></li> 
+                <li><a href="../site map/SiteMap.html">Destination</a></li> 
+                <li><a href="../gallery/WebCw gallery.html">Gallery</a></li>  
+                <li><a href="../quiz/quiz.html">Quiz</a></li> 
+                <li><a href="../buy products/buy products.html">Store</a></li>
+                <li><a href="queryform.html">Query form</a></li>
+                <li><a href="../about us/student_details2.html">About Us</a></li>             
+            </ul>
+        </div>
+    
+	<div class="queryform" id="queryform"><h2>Query Form</h2></div>
+    <form action="index.html" onsubmit=" return submitForm()" id="data_form" name="form" class="main" >
+
+        <div class="form-item">
+            <label>Name :</label>
+            <input type="text" name="name" id="name" class="name" placeholder="Name">
+        </div>
+
+
+        <div class="form-item">
+            <label>E-mail :</label>
+            <input type="email" name="email" id="email" class="email" placeholder="E-mail">
+        </div>
+
+        <div class="form-item">
+            <label>Subjects :</label>
+            <select class="subjects" name="subjects" id="subjects" >
+                <option disabled="disabled" selected="selected" value="--Choose a subject">--Select a Country--</option>
+                <option value="subject 1">France</option>
+                <option value="subject 2">Egypt</option>
+                <option value="subject 3">Italy</option>
+                <option value="subject 4">Sri Lanka</option><br>  
+            </select> 
+        </div>
+
+        <div class="form-item">
+            <label>Details :</label>
+            <textarea type="text" name="details" id="details" class="details" placeholder="Details"></textarea>
+        </div>
+
+
+        <div class="form-item">
+            <button type = "reset">Reset</button>
+            <button type = "submit">Check</button>
+        </div>
+    </form>
+
+    <div id="result" class="result" >
+        <h4>Name - <span id="result_name"></span></h4>
+        <h4>E-mail - <span id="result_email"></span></h4>
+        <h4>Subjects - <span id="result_subjects"></span></h4>
+        <h4>Details - <span id="result_details"></span></h4>
+    <div>
+        <button type="button" onclick="toggleForm()">Edit</button>
+        <form action = "mailto:rashmikarunarathne15@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="name" id="name1">
+            <input type="hidden" name="email" id="email1">
+            <input type="hidden" name="subjects" id="subject1">
+            <input type="hidden" name="details" id="details1">
+    <button type="submit"> Send</button>
+    </form>
+    </div>
+    </div>
+
+    <footer>
+    <div>
+        <p>Page Editor : <br>
+        <a href="editor_page.html" class="ref">Rashmi Karunarathne</a></p>
+        </div>
+    </footer>
+    
+</form>
+</body>
+</html>

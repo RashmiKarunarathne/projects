@@ -1,0 +1,76 @@
+body{
+	background-color: #171717;
+	background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home{
+    fill:rgb(244, 244, 252);
+    stroke:rgb(238, 232, 234);
+    stroke-width:5;
+    opacity:0.75;
+    transition: 0.5s;
+	
+}
+
+#home:hover text,#home:hover rect{
+    opacity:1;
+    cursor: pointer;
+}
+
+.firstdiv{
+    fill: #3fefef;
+    opacity: .7;
+    transition: 0.5s;
+}
+
+.firstDivisionG:hover text, .firstDivisionG:hover rect{
+    opacity: 1;
+    cursor: pointer;
+}
+
+line{
+    stroke:rgb(248, 246, 246);
+    stroke-width:7
+}
+
+.pages:hover rect, .pages:hover text {
+    opacity: 1;
+    cursor: pointer;
+}
+.home{
+	    margin-right:50px;
+}
+.destination{
+    margin-left:30px;
+    margin-top:30px;
+    position:relative;
+    top:-115px;
+    left:250px;
+
+}
+.gallery{
+    position:relative;
+    top:-200px;
+    left:500px;
+}
+.Quiz{
+    position:relative;
+    top:-285px;
+    left:700px;
+}
+.Store{
+    position:relative;
+    top:-370px;
+    left:900px;
+}
+.Query-form{
+    position:relative;
+    top:-452px;
+    left:1100px;
+}
+.About-Us{
+    position:relative;
+    top:-535px;
+    left:1300px;
+}

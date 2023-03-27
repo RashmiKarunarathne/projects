@@ -1,0 +1,45 @@
+h1 {
+    font: bold;
+    color:rgb(35, 35, 107);
+    font-family: calibri;
+}
+
+h2{
+    color:darkblue;
+   
+
+}
+
+h3{
+    color: rgb(50, 50, 107);
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+    font-size: xx-large;
+    
+}
+
+hr{
+    border-top: 1px solid rgb(8, 145, 126);
+    max-width: 10000px;
+    
+}
+
+body{
+    background-color: rgb(140, 141, 143);
+}
+
+img{
+    width:10%;
+    height:1%;
+    border-radius: 2%;
+    border-color: black;
+    border: 2;
+   }
+
+div{
+    text-align:center;
+    font-family:sans-serif;
+}

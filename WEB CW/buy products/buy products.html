@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buy products</title>
+
+<style>
+
+body{
+
+background-image:url('hortainplains.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%
+
+}
+
+
+ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: rgb(124, 22, 90);
+
+  }
+
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(218, 145, 218);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 16;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  li a:hover {
+    border: 2px solid rgb(250, 134, 231);
+    border-radius: 15%;
+    background-color: rgb(177, 5, 125);
+  }
+
+  .img{
+    width: 80px;
+    height: 60px;
+  }
+
+  .footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	background-color: purple;
+	color: white;
+	text-align: center;
+}
+
+</style>
+
+<link rel="stylesheet" href="buy products style.css"/>
+
+<script>
+      function passvalues()
+	  {
+	    var firstname=document.getElementById("txt").value;
+		localStorage.setItem("textvalue",firstname);
+		return false;
+	  }
+</script>
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>                     
+                           
+            <li><img src="../images/image1.jpg" class="img"></li>
+            <li><a href="../html/home.html">Home</a></li> 
+            <li><a href="../site map/SiteMap.html">Destination</a></li> 
+            <li><a href="../gallery/WebCw gallery.html">Gallery</a></li>  
+            <li><a href="../quiz/quiz.html">Quiz</a></li> 
+            <li><a href="../buy products/buy products.html">Store</a></li>
+            <li><a href="../html/queryform.html">Query form</a></li>
+            <li><a href="../about us/student_details2.html">About Us</a></li>             
+           
+        </ul>
+    </div>
+
+<h1 style="background-color:#000000; text-align:center; color:#FFFFFF; font-size:500%;">Buy your Travelling essentials in here</h1>
+
+    <h2 style="color:white;  font-size:200%;">Personal details</h2>
+	<h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Your name</h2>
+	
+
+    <form>
+	   <input type="text" name="your name" placeholder="write your name">
+	</form>
+
+</body>
+
+<body>
+   <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Your age</h2>
+   <form>
+     <input type="text" name="your age" placeholder="write your age">
+   </form>
+</body>
+
+<body>
+   <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Which country are you from?</h2>
+   <form>
+     <input type="text" name="your country" placeholder="write your country">
+   </form>
+</body>
+
+<body>
+   <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Travel destinations you are interested in</h2>
+   <form>
+     <input type="text" name="Travel destinations" placeholder="Travel destinations">
+   </form>
+</body>
+
+<body>
+   <h2 style="color:white; font-size:200%;">Select your favourite Travelling Gear </h2>  
+   <h3 style="text-align:center; font-size:200%; color:white;">Binoculars</h3>
+   <img src="Binoculars.jpg"
+   alt="Binocular" width="300">
+   <img src="Binocular.jpg" alt="Binocular" width="300">
+    <img src="Binoculars1.jpg" alt="Binocular" width="300">
+   
+   <h3 style="text-align:center; font-size:200%; color:white; background-color:black; ">
+   Choose your Binocular model and range of the Binocular</h3>
+
+
+   
+</body>
+
+<body>
+    <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Models : Nikon , Canon , Celestron</h2>
+    <form>
+    <input type="text" name="Models : Nikon , Canon" placeholder="write the model you choose">
+
+
+	
+	
+	<h2 style="padding:0% 0% 0% 0%;   font-size:150%; color:white;">Quantity</h2>
+    <form>
+    <input type="text" name="Quantity" placeholder="write the Quantity">
+    </form>
+</body>
+
+<body>
+    
+   <h3 style="text-align:center; font-size:200%; color:white;">Shoes</h3>
+   <img src="Ladies shoes.jpg"
+   alt="Ladies shoes" width="300">
+   <img src="Grey shoes.jpg" alt="Gents shoes" width="300">
+      <img src="Brown shoes.jpg" alt="Gents shoes" width="300">
+   
+   <h3 style="text-align:center; font-size:200%; color:white; background-color:black; ">
+   Choose your type of shoes</h3>
+
+
+   
+</body>
+
+<body>
+    <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Colors : Pink , Black , Grey</h2>
+    <form>
+    <input type="text" name="Shoe color" placeholder="write the shoe color">
+
+
+	
+	
+	<h2 style="padding:0% 0% 0% 0%;   font-size:150%; color:white;">Quantity</h2>
+    <form>
+    <input type="text" name="Quantity" placeholder="write the Quantity">
+    </form>
+</body>
+
+<body>
+    
+   <h3 style="text-align:center; font-size:200%; color:white;">Backpacks</h3>
+   <img src="under armour.jpg"
+   alt="backpack" width="300">
+   <img src="swiss gear.jpg" alt="backpack" width="300">
+   <img src="fila.jpg" alt="backpack" width="300">
+   
+   <h3 style="text-align:center; font-size:200%; color:white; background-color:black; ">
+   Choose your type of backpack</h3>
+
+
+   
+</body>
+
+<body>
+    <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Model : UNDER ARMOUR , SWISSGEAR , FILA</h2>
+    <form>
+    <input type="text" name="Backpack model" placeholder="write the backpack model">
+
+
+	
+	
+	<h2 style="padding:0% 0% 0% 0%;   font-size:150%; color:white;">Quantity</h2>
+    <form>
+    <input type="text" name="Quantity" placeholder="write the Quantity">
+    </form>
+</body>
+
+<body>
+    
+   <h3 style="text-align:center; font-size:200%; color:white;">Camping Tents</h3>
+   <img src="full tent.jpg"
+   alt="tent" width="300">
+   <img src="mid tent.jpg" alt="tent" width="300">
+   <img src="small tent.jpg" alt="tent" width="300">
+   
+   <h3 style="text-align:center; font-size:200%; color:white; background-color:black; ">
+   Choose your type of Camping Tents</h3>
+
+
+   
+</body>
+
+<body>
+    <h2 style="padding:0% 0% 0% 5%;   font-size:150%; color:white;">Size : Full size , Mid size , Small size</h2>
+    <form>
+    <input type="text" name="size" placeholder="write the tent size">
+
+
+	
+	
+	<h2 style="padding:0% 0% 0% 0%;   font-size:150%; color:white;">Quantity</h2>
+    <form>
+    <input type="text" name="Quantity" placeholder="write the Quantity">
+    </form>
+</body>
+
+<br>
+
+<hr>
+<br>
+<br>
+<body style="padding-bottom:10%;">
+   <form action="../buy products/buy products invoice.html">
+    <input type="text" id="txt" placeholder="Place your order in here"/>
+	<input type="submit" value="Place Order" onclick="passvalues();"/>
+   </form>
+
+   <div class="footer">
+    <p><a href="../buy products/editor_page.html">Page Editor</a></p>
+</div>
+ 
+</body>
+
+
+</html>

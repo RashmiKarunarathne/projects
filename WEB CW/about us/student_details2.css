@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+    background:#8083C9;
+    font-family: sans-serif;
+
+}
+
+.heading{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container {
+    width:750px;
+    min: height 500px;
+    background: #8083C9;
+    margin: 70px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height:300px;
+    background: #ff0;
+    margin:10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.container .box .imgbox img {
+    transform: transform 2s;
+}
+
+img {
+    object-fit:cover;
+    width:300px;
+    height:300px;
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: transform .5s;
+    transition: opacity .5s;
+}
+
+.container .box:hover .details{
+    opacity: 1;
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: justify;
+    padding: 15px;
+    color:#fff;
+}
+
+.container .box .details .content h2 {
+    margin:0;
+    padding:0;
+    font-size:20px;
+    color: yellow;
+}
+
+.container .box .details .content p {
+    margin:0;
+    padding:0;
+    font-size:15px;
+    color: #fff;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	background-color: purple;
+	color: white;
+	text-align: center;
+}
+
+
+ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: rgb(124, 22, 90);
+
+  }
+
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(218, 145, 218);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 16;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  li a:hover {
+    border: 2px solid rgb(250, 134, 231);
+    border-radius: 15%;
+    background-color: rgb(177, 5, 125);
+  }
+
+
+
+.flex-container > div {
+background-color: #3f3f3f;
+width: 800px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+opacity:0.6;
+border-radius: 15%;
+
+}
+
+.img{
+    width: 80px;
+    height: 50px;
+}

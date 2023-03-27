@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title> Quiz </title>
+		<link rel="stylesheet" type="text/css" href="quiz.css">
+		<script src="quiz.js"></script>
+</head>
+<body>
+	<div class="navigation">
+		<ul>                     
+						   
+			<li><img src="../images/image1.jpg" class="img"></li>
+			<li><a href="../html/home.html">Home</a></li> 
+			<li><a href="../site map/SiteMap.html">Destination</a></li> 
+			<li><a href="../gallery/WebCw gallery.html">Gallery</a></li>  
+			<li><a href="../quiz/quiz.html">Quiz</a></li> 
+			<li><a href="../buy products/buy products.html">Store</a></li>
+			<li><a href="../html/queryform.html">Query form</a></li>
+			<li><a href="../about us/student_details2.html">About Us</a></li>             
+		   
+		</ul>
+	</div>
+    <div >
+        <p></p>
+        <h1> The World At The Palm Of Our Hands </h1>
+        <hr>
+        <br>
+        <br>
+        <h2> How many will you get right?</h2>
+    </div>
+
+	<button class="button_start" id="strbtn" onclick="StartFun();countdown();">Start the quiz</button>
+	<div id="countdown">You have 60 seconds to complete the quiz</div>
+	<div id="countdownleft" style="display: none;">60 seconds spent</div>
+	<div id="marks"></div>
+	 
+	<form name="quiz" id="quiz" style="display: none;">  
+		<fieldset id="formcontrol" style=" border: 0; padding:0; margin:0;">
+
+			<div id="q1" class="container">
+                <div>
+                    <img class="image_questions" src="q1.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 1. What is the Capital of Sri Lanka? </p>
+				<p><input type="radio" name="question1" value="Kandy" required>A. Kandy</p>
+				<p><input type="radio" name="question1" value="Anuradhapura">B. Anuradhapura</p>
+				<p><input type="radio" name="question1" value="Sri Jayawardanapura Kotte">C. Sri Jayawardanapura Kotte</p>
+				<p><input type="radio" name="question1" value="Galle">D. Galle</p>
+				<p id="result1"></p>
+			</div>
+            <br>
+			<div id="q2" class="container">
+                <div>
+                    <img class="image_questions" src="q2.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 2. What is Commonly referred to as the 8<sup>th</sup> wonder of the world? </p>
+				<p><input type="radio" name="question2" value="Sigiriya" required>A. Sigiriya</p>
+				<p><input type="radio" name="question2" value="Thumparamaya Temple">B. Thuparamaya Temple</p>
+				<p><input type="radio" name="question2" value="Dambulla Cave">C. Dambulla Cave</p>
+				<p><input type="radio" name="question2" value="Temple of the Sacred Tooth Relic">D. Temple of the Sacred Tooth Relic</p>
+				<p id="result2"></p>
+			</div>
+            <br>
+			<div id="q3" class="container">
+                <div>
+                    <img class="image_questions" src="q3.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 3. Where is the Colosseum Located? </p>
+				<p><input type="radio" name="question3" value="Rome" required>A. Rome</p>
+				<p><input type="radio" name="question3" value="Athens">B. Athens</p>
+				<p><input type="radio" name="question3" value="Madrid">C. Madrid</p>
+				<p><input type="radio" name="question3" value="Florence">D. Florence</p>
+				<p id="result3"></p>
+			</div>
+            <br>
+			<div id="q4" class="container">
+                <div>
+                    <img class="image_questions" src="q4.jpeg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 4. What city known as " The City Of Love" is also home to The Eiffel Tower? </p>
+				<p><input type="radio" name="question4" value="Las Vegas" required>A. Las Vegas</p>
+				<p><input type="radio" name="question4" value="Beijing">B. Beijing</p>
+				<p><input type="radio" name="question4" value="London">C. London</p>
+				<p><input type="radio" name="question4" value="Paris">D. Paris</p>
+				<p id="result4"></p>
+			</div>
+            <br>
+			<div id="q5" class="container">
+                <div>
+                    <img class="image_questions" src="q5.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 5. How many mettalic spheres are there in the atmomic stucture(atmomium) in Belgium? </p>
+				<p><input type="radio" name="question5" value="8" required>A. 8</p>
+				<p><input type="radio" name="question5" value="9">B. 9</p>
+				<p><input type="radio" name="question5" value="10">C. 10</p>
+				<p><input type="radio" name="question5" value="7">D. 7</p>
+				<p id="result5"></p>
+			</div>
+            <br>
+			<div id="q6" class="container">
+                <div>
+                    <img class="image_questions" src="q6.jpeg" alt="Image Not Available" width="300" height="210">
+                </div>
+				<p class="q_props"> 6. What is the most visited country in the world?  </p>
+				<p><input type="radio" name="question6" value="South Korea" required>A. South Korea</p>
+				<p><input type="radio" name="question6" value="London">B. London</p>
+				<p><input type="radio" name="question6" value="France">C. France</p>
+				<p><input type="radio" name="question6" value="China">D. China</p>
+				<p id="result6"></p>
+			</div>
+            <br>
+			<div id="q7" class="container">
+                <div>
+                    <img class="image_questions" src="q7.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 7. What is Egypt most famous for?</p>
+				<p><input type="radio" name="question7" value="Taj Mahal" required>A. Taj Mahal</p>
+				<p><input type="radio" name="question7" value="Pyramids of Giza">B. Pyramids of Giza</p>
+				<p><input type="radio" name="question7" value="Forbidden City">C. Forbidden City</p>
+				<p><input type="radio" name="question7" value="The Pantheon">D. The Pantheon</p>
+				<p id="result7"></p>
+			</div>
+            <br>
+			<div id="q8" class="container">
+                <div>
+                    <img class="image_questions" src="q8.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 8. What is the Tallest Buidling in the world? </p>
+				<p><input type="radio" name="question8" value="Shanghai Tower" required>A. Shanghai Tower - Shanghai</p>
+				<p><input type="radio" name="question8" value="Burj Khalifa">B. Burj Khalifa - Dubai</p>
+				<p><input type="radio" name="question8" value="Space Needle">C. Space Needle - Seattle</p>
+				<p><input type="radio" name="question8" value="Empire State Building">D. Empire State Building - New York City</p>
+				<p id="result8"></p>
+			</div>
+            <br>
+			<div id="q9" class="container">
+                <div>
+                    <img class="image_questions" src="q9.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 9. How long is the Great Wall of China?  </p>
+				<p><input type="radio" name="question9" value="21196 km" required>A. 21196 km</p>
+				<p><input type="radio" name="question9" value="10256 km">B. 10256 km</p>
+				<p><input type="radio" name="question9" value="5436 km">C. 5436 km</p>
+				<p><input type="radio" name="question9" value="35543 km">D. 35543 km</p>
+				<p id="result9"></p>
+			</div>
+            <br>
+			<div id="q10" class="container">
+                <div>
+                    <img class="image_questions" src="q10.jpg" alt="Image Not Available" width="300" height="210" >
+                </div>
+				<p class="q_props"> 10. What is the most Bio Diverse country in the world?  </p>
+				<p><input type="radio" name="question10" value="Greenland" required>A. Greenland</p>
+				<p><input type="radio" name="question10" value="Russia">B. Russia</p>
+				<p><input type="radio" name="question10" value="Canada">C. Canada</p>
+				<p><input type="radio" name="question10" value="Brazil">D. Brazil</p>
+				<p id="result10"></p>
+			</div>
+			<br>
+
+			<input class="button_submit" type="button" id="submitbtn" value="Submit" onclick="getRadioValue()">
+		</fieldset>
+	</form>
+	<br>
+	<br>
+	<br>
+	
+	<div class="footer">
+		<p><a href="page_editor.html">Page Editor</a></p>
+	</div>
+</body>
+</html>
